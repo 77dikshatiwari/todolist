@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="todo.css" />
+    <title>To-Do list</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <div class="container-1">
+          <div class="heading">
+            <h1>Create To Do</h1>
+            <hr />
+          </div>
+          <form class="form-1" id="myform">
+            <label for="title">Add list title</label>
+            <input type="text" name="title" id="title" placeholder="Grocery" />
+            <input
+              type="button"
+              class="add-btn"
+              onclick="updateTitle()"
+              value="Add Name"
+            /><br />
+            <label for="item">Add item to list</label>
+            <input
+              type="text"
+              name="item"
+              id="item"
+              placeholder="Enter another item"
+            />
+            <input
+              type="button"
+              class="add-item"
+              value="Add Item"
+              onclick="addItem()"
+            /><span class="addBtn"></span>
+          </form>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container-2">
+          <div class="heading">
+            <h1 id="heading">Grocery</h1>
+            <hr />
+          </div>
+        
+        <div class="checklist">
+          <ul id="myUL">
+            <li>Hit the gym</li>
+            <li class="checked">Pay bills</li>
+            <li>Read a book</li>
+            <li>Organize office</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
